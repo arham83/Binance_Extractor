@@ -1,0 +1,11 @@
+# Binance market-data pipeline settings.
+market: um
+symbol: BTCUSDT
+interval: 5m
+start_date: 2026-07-01
+end_date: 2026-08-31
+output_format: parquet
+
+# Output folders, relative to this project folder.
+raw_folder: data/raw
+preprocessed_folder: data/pre_processed
