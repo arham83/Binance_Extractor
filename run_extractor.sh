@@ -38,7 +38,7 @@ fi
 source "$SCRIPT_DIR/.venv/bin/activate"
 
 # 1. Download daily futures kline ZIPs into data/raw.
-python "$SCRIPT_DIR/downloader.py" \
+python "$SCRIPT_DIR/core/downloader.py" \
   --market "$MARKET" \
   --symbol "$SYMBOL" \
   --interval "$INTERVAL" \
@@ -47,12 +47,12 @@ python "$SCRIPT_DIR/downloader.py" \
   --output "$SCRIPT_DIR/$RAW_FOLDER"
 
 # 2. Unzip and preprocess every daily CSV.
-python "$SCRIPT_DIR/preprocesser.py" \
+python "$SCRIPT_DIR/core/preprocesser.py" \
   --input "$SCRIPT_DIR/$RAW_FOLDER/$MARKET/$SYMBOL/$INTERVAL" \
   --output "$SCRIPT_DIR/$PREPROCESSED_FOLDER/splitted"
 
 # 3. Store merged yearly files directly in data/pre_processed.
-python "$SCRIPT_DIR/merger.py" \
+python "$SCRIPT_DIR/core/merger.py" \
   --input "$SCRIPT_DIR/$PREPROCESSED_FOLDER/splitted" \
   --output "$SCRIPT_DIR/$PREPROCESSED_FOLDER" \
   --format "$OUTPUT_FORMAT"
