@@ -1,0 +1,25 @@
+# Virtual environments
+.venv/
+venv/
+
+# Downloaded and generated datasets
+data/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Temporary downloads
+*.part
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*~
