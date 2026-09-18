@@ -1,0 +1,17 @@
+# Run from the repository root: ./run_feature_eng.sh
+# Relative paths are resolved from the folder containing this YAML file.
+
+# One raw Parquet file or a folder searched recursively for Parquet files.
+input: ../data/pre_processed
+
+# A NEW output folder. Change this path before running the same job again.
+# Each symbol gets its own file, e.g. BTCUSDT-features.parquet and ETHUSDT-features.parquet.
+# Output columns: candle_end_utc, symbol, and the 128 engineered features only.
+output: ../data/features/market_128_by_symbol
+
+# [] processes every symbol found. Example filter: [BTCUSDT, ETHUSDT]
+symbols: []
+
+# reset restarts indicator history after missing candles (recommended).
+# rows keeps history across gaps and treats each observed row as one step.
+gap_policy: reset

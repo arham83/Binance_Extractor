@@ -2,7 +2,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CONFIG_FILE="$SCRIPT_DIR/config/config_extractor.yaml"
+CONFIG_FILE="$SCRIPT_DIR/config/config_feature_eng.yaml"
 if [[ $# -gt 0 && "$1" != --* ]]; then
   CONFIG_FILE="$1"
   shift
@@ -13,4 +13,4 @@ if [[ ! -x "$SCRIPT_DIR/.venv/bin/python" ]]; then
   exit 1
 fi
 
-exec "$SCRIPT_DIR/.venv/bin/python" -u "$SCRIPT_DIR/extractor/pipeline.py" --config "$CONFIG_FILE" "$@"
+exec "$SCRIPT_DIR/.venv/bin/python" -u "$SCRIPT_DIR/feature_eng/main.py" --config "$CONFIG_FILE" "$@"

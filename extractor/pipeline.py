@@ -153,7 +153,7 @@ def run_pipeline(settings: dict, *, download_only: bool = False, process_only: b
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", type=Path, default=PROJECT / "config.yaml")
+    parser.add_argument("--config", type=Path, default=PROJECT / "config" / "config_extractor.yaml")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--download-only", action="store_true")
     mode.add_argument("--process-only", action="store_true", help="Rebuild from local archives without network requests")

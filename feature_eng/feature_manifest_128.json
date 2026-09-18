@@ -1,0 +1,2013 @@
+{
+  "version": "1.0",
+  "status": "proposed baseline; not empirically validated",
+  "count": 128,
+  "counts": {
+    "Price and candle shape": 12,
+    "Trend": 20,
+    "Momentum": 24,
+    "Volatility": 20,
+    "Volume and activity": 24,
+    "Distribution and regime changes": 16,
+    "Trade flow and calendar": 12
+  },
+  "features": [
+    {
+      "id": 1,
+      "name": "log_return_1",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "log_return_2",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "name": "log_return_3",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "name": "log_return_5",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "name": "log_return_10",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "name": "log_return_20",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "name": "log_return_40",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "name": "log_return_80",
+      "group": "Price and candle shape",
+      "family": "Historical log returns",
+      "parameters": {
+        "horizons": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "name": "candle_body",
+      "group": "Price and candle shape",
+      "family": "Candle shape",
+      "parameters": {
+        "normalizer": "previous_close",
+        "body": "signed"
+      }
+    },
+    {
+      "id": 10,
+      "name": "candle_range",
+      "group": "Price and candle shape",
+      "family": "Candle shape",
+      "parameters": {
+        "normalizer": "previous_close",
+        "body": "signed"
+      }
+    },
+    {
+      "id": 11,
+      "name": "upper_wick",
+      "group": "Price and candle shape",
+      "family": "Candle shape",
+      "parameters": {
+        "normalizer": "previous_close",
+        "body": "signed"
+      }
+    },
+    {
+      "id": 12,
+      "name": "lower_wick",
+      "group": "Price and candle shape",
+      "family": "Candle shape",
+      "parameters": {
+        "normalizer": "previous_close",
+        "body": "signed"
+      }
+    },
+    {
+      "id": 13,
+      "name": "ema_distance_5",
+      "group": "Trend",
+      "family": "EMA distance",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "name": "ema_distance_10",
+      "group": "Trend",
+      "family": "EMA distance",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "name": "ema_distance_20",
+      "group": "Trend",
+      "family": "EMA distance",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "name": "ema_distance_40",
+      "group": "Trend",
+      "family": "EMA distance",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "name": "ema_distance_80",
+      "group": "Trend",
+      "family": "EMA distance",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "name": "ema_distance_160",
+      "group": "Trend",
+      "family": "EMA distance",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "sma_distance_10",
+      "group": "Trend",
+      "family": "SMA distance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "sma_distance_20",
+      "group": "Trend",
+      "family": "SMA distance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "sma_distance_50",
+      "group": "Trend",
+      "family": "SMA distance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "sma_distance_100",
+      "group": "Trend",
+      "family": "SMA distance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          50,
+          100
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "log_slope_10",
+      "group": "Trend",
+      "family": "Log-price regression slope",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "log_slope_20",
+      "group": "Trend",
+      "family": "Log-price regression slope",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "log_slope_40",
+      "group": "Trend",
+      "family": "Log-price regression slope",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "log_slope_80",
+      "group": "Trend",
+      "family": "Log-price regression slope",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "name": "log_slope_160",
+      "group": "Trend",
+      "family": "Log-price regression slope",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "name": "log_r2_10",
+      "group": "Trend",
+      "family": "Log-price regression R squared",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "log_r2_20",
+      "group": "Trend",
+      "family": "Log-price regression R squared",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "log_r2_40",
+      "group": "Trend",
+      "family": "Log-price regression R squared",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "log_r2_80",
+      "group": "Trend",
+      "family": "Log-price regression R squared",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "log_r2_160",
+      "group": "Trend",
+      "family": "Log-price regression R squared",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80,
+          160
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "rsi_5",
+      "group": "Momentum",
+      "family": "RSI",
+      "parameters": {
+        "windows": [
+          5,
+          7,
+          14,
+          21,
+          28,
+          42
+        ],
+        "smoothing": "Wilder"
+      }
+    },
+    {
+      "id": 34,
+      "name": "rsi_7",
+      "group": "Momentum",
+      "family": "RSI",
+      "parameters": {
+        "windows": [
+          5,
+          7,
+          14,
+          21,
+          28,
+          42
+        ],
+        "smoothing": "Wilder"
+      }
+    },
+    {
+      "id": 35,
+      "name": "rsi_14",
+      "group": "Momentum",
+      "family": "RSI",
+      "parameters": {
+        "windows": [
+          5,
+          7,
+          14,
+          21,
+          28,
+          42
+        ],
+        "smoothing": "Wilder"
+      }
+    },
+    {
+      "id": 36,
+      "name": "rsi_21",
+      "group": "Momentum",
+      "family": "RSI",
+      "parameters": {
+        "windows": [
+          5,
+          7,
+          14,
+          21,
+          28,
+          42
+        ],
+        "smoothing": "Wilder"
+      }
+    },
+    {
+      "id": 37,
+      "name": "rsi_28",
+      "group": "Momentum",
+      "family": "RSI",
+      "parameters": {
+        "windows": [
+          5,
+          7,
+          14,
+          21,
+          28,
+          42
+        ],
+        "smoothing": "Wilder"
+      }
+    },
+    {
+      "id": 38,
+      "name": "rsi_42",
+      "group": "Momentum",
+      "family": "RSI",
+      "parameters": {
+        "windows": [
+          5,
+          7,
+          14,
+          21,
+          28,
+          42
+        ],
+        "smoothing": "Wilder"
+      }
+    },
+    {
+      "id": 39,
+      "name": "stoch_k_7",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 40,
+      "name": "stoch_d_7",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 41,
+      "name": "stoch_k_14",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 42,
+      "name": "stoch_d_14",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 43,
+      "name": "stoch_k_21",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 44,
+      "name": "stoch_d_21",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 45,
+      "name": "stoch_k_28",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 46,
+      "name": "stoch_d_28",
+      "group": "Momentum",
+      "family": "Fast stochastic",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          21,
+          28
+        ],
+        "d_sma": 3
+      }
+    },
+    {
+      "id": 47,
+      "name": "cci_10",
+      "group": "Momentum",
+      "family": "CCI",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "name": "cci_20",
+      "group": "Momentum",
+      "family": "CCI",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 49,
+      "name": "cci_40",
+      "group": "Momentum",
+      "family": "CCI",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "name": "cci_80",
+      "group": "Momentum",
+      "family": "CCI",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 51,
+      "name": "macd_line_6_13_5",
+      "group": "Momentum",
+      "family": "Normalized MACD",
+      "parameters": {
+        "settings": [
+          [
+            6,
+            13,
+            5
+          ],
+          [
+            12,
+            26,
+            9
+          ],
+          [
+            24,
+            52,
+            18
+          ]
+        ],
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 52,
+      "name": "macd_hist_6_13_5",
+      "group": "Momentum",
+      "family": "Normalized MACD",
+      "parameters": {
+        "settings": [
+          [
+            6,
+            13,
+            5
+          ],
+          [
+            12,
+            26,
+            9
+          ],
+          [
+            24,
+            52,
+            18
+          ]
+        ],
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 53,
+      "name": "macd_line_12_26_9",
+      "group": "Momentum",
+      "family": "Normalized MACD",
+      "parameters": {
+        "settings": [
+          [
+            6,
+            13,
+            5
+          ],
+          [
+            12,
+            26,
+            9
+          ],
+          [
+            24,
+            52,
+            18
+          ]
+        ],
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 54,
+      "name": "macd_hist_12_26_9",
+      "group": "Momentum",
+      "family": "Normalized MACD",
+      "parameters": {
+        "settings": [
+          [
+            6,
+            13,
+            5
+          ],
+          [
+            12,
+            26,
+            9
+          ],
+          [
+            24,
+            52,
+            18
+          ]
+        ],
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 55,
+      "name": "macd_line_24_52_18",
+      "group": "Momentum",
+      "family": "Normalized MACD",
+      "parameters": {
+        "settings": [
+          [
+            6,
+            13,
+            5
+          ],
+          [
+            12,
+            26,
+            9
+          ],
+          [
+            24,
+            52,
+            18
+          ]
+        ],
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 56,
+      "name": "macd_hist_24_52_18",
+      "group": "Momentum",
+      "family": "Normalized MACD",
+      "parameters": {
+        "settings": [
+          [
+            6,
+            13,
+            5
+          ],
+          [
+            12,
+            26,
+            9
+          ],
+          [
+            24,
+            52,
+            18
+          ]
+        ],
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 57,
+      "name": "return_vol_5",
+      "group": "Volatility",
+      "family": "Return volatility",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "ddof": 0
+      }
+    },
+    {
+      "id": 58,
+      "name": "return_vol_10",
+      "group": "Volatility",
+      "family": "Return volatility",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "ddof": 0
+      }
+    },
+    {
+      "id": 59,
+      "name": "return_vol_20",
+      "group": "Volatility",
+      "family": "Return volatility",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "ddof": 0
+      }
+    },
+    {
+      "id": 60,
+      "name": "return_vol_40",
+      "group": "Volatility",
+      "family": "Return volatility",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "ddof": 0
+      }
+    },
+    {
+      "id": 61,
+      "name": "return_vol_80",
+      "group": "Volatility",
+      "family": "Return volatility",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "ddof": 0
+      }
+    },
+    {
+      "id": 62,
+      "name": "return_vol_160",
+      "group": "Volatility",
+      "family": "Return volatility",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "ddof": 0
+      }
+    },
+    {
+      "id": 63,
+      "name": "atr_normalized_7",
+      "group": "Volatility",
+      "family": "Normalized ATR",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ],
+        "smoothing": "Wilder",
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 64,
+      "name": "atr_normalized_14",
+      "group": "Volatility",
+      "family": "Normalized ATR",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ],
+        "smoothing": "Wilder",
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 65,
+      "name": "atr_normalized_28",
+      "group": "Volatility",
+      "family": "Normalized ATR",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ],
+        "smoothing": "Wilder",
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 66,
+      "name": "atr_normalized_56",
+      "group": "Volatility",
+      "family": "Normalized ATR",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ],
+        "smoothing": "Wilder",
+        "normalizer": "current_close"
+      }
+    },
+    {
+      "id": 67,
+      "name": "bb_position_10",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 68,
+      "name": "bb_width_10",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 69,
+      "name": "bb_position_20",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 70,
+      "name": "bb_width_20",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 71,
+      "name": "bb_position_40",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 72,
+      "name": "bb_width_40",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 73,
+      "name": "bb_position_80",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 74,
+      "name": "bb_width_80",
+      "group": "Volatility",
+      "family": "Bollinger bands",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ],
+        "standard_deviations": 2,
+        "ddof": 0
+      }
+    },
+    {
+      "id": 75,
+      "name": "downside_deviation_20",
+      "group": "Volatility",
+      "family": "Downside deviation",
+      "parameters": {
+        "windows": [
+          20,
+          80
+        ],
+        "threshold": 0
+      }
+    },
+    {
+      "id": 76,
+      "name": "downside_deviation_80",
+      "group": "Volatility",
+      "family": "Downside deviation",
+      "parameters": {
+        "windows": [
+          20,
+          80
+        ],
+        "threshold": 0
+      }
+    },
+    {
+      "id": 77,
+      "name": "relative_volume_5",
+      "group": "Volume and activity",
+      "family": "Relative volume",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current"
+      }
+    },
+    {
+      "id": 78,
+      "name": "relative_volume_10",
+      "group": "Volume and activity",
+      "family": "Relative volume",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current"
+      }
+    },
+    {
+      "id": 79,
+      "name": "relative_volume_20",
+      "group": "Volume and activity",
+      "family": "Relative volume",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current"
+      }
+    },
+    {
+      "id": 80,
+      "name": "relative_volume_40",
+      "group": "Volume and activity",
+      "family": "Relative volume",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current"
+      }
+    },
+    {
+      "id": 81,
+      "name": "relative_volume_80",
+      "group": "Volume and activity",
+      "family": "Relative volume",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current"
+      }
+    },
+    {
+      "id": 82,
+      "name": "relative_volume_160",
+      "group": "Volume and activity",
+      "family": "Relative volume",
+      "parameters": {
+        "windows": [
+          5,
+          10,
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current"
+      }
+    },
+    {
+      "id": 83,
+      "name": "volume_zscore_20",
+      "group": "Volume and activity",
+      "family": "Volume z-score",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 84,
+      "name": "volume_zscore_40",
+      "group": "Volume and activity",
+      "family": "Volume z-score",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 85,
+      "name": "volume_zscore_80",
+      "group": "Volume and activity",
+      "family": "Volume z-score",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 86,
+      "name": "volume_zscore_160",
+      "group": "Volume and activity",
+      "family": "Volume z-score",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "baseline": "previous n candles excluding current",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 87,
+      "name": "obv_balance_10",
+      "group": "Volume and activity",
+      "family": "Rolling OBV balance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 88,
+      "name": "obv_balance_20",
+      "group": "Volume and activity",
+      "family": "Rolling OBV balance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 89,
+      "name": "obv_balance_40",
+      "group": "Volume and activity",
+      "family": "Rolling OBV balance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 90,
+      "name": "obv_balance_80",
+      "group": "Volume and activity",
+      "family": "Rolling OBV balance",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 91,
+      "name": "mfi_7",
+      "group": "Volume and activity",
+      "family": "MFI",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ]
+      }
+    },
+    {
+      "id": 92,
+      "name": "mfi_14",
+      "group": "Volume and activity",
+      "family": "MFI",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ]
+      }
+    },
+    {
+      "id": 93,
+      "name": "mfi_28",
+      "group": "Volume and activity",
+      "family": "MFI",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ]
+      }
+    },
+    {
+      "id": 94,
+      "name": "mfi_56",
+      "group": "Volume and activity",
+      "family": "MFI",
+      "parameters": {
+        "windows": [
+          7,
+          14,
+          28,
+          56
+        ]
+      }
+    },
+    {
+      "id": 95,
+      "name": "cmf_10",
+      "group": "Volume and activity",
+      "family": "CMF",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 96,
+      "name": "cmf_20",
+      "group": "Volume and activity",
+      "family": "CMF",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 97,
+      "name": "cmf_40",
+      "group": "Volume and activity",
+      "family": "CMF",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 98,
+      "name": "cmf_80",
+      "group": "Volume and activity",
+      "family": "CMF",
+      "parameters": {
+        "windows": [
+          10,
+          20,
+          40,
+          80
+        ]
+      }
+    },
+    {
+      "id": 99,
+      "name": "log1p_volume",
+      "group": "Volume and activity",
+      "family": "Activity levels",
+      "parameters": {
+        "input": "volume",
+        "input_units": "base asset",
+        "transform": "log1p"
+      }
+    },
+    {
+      "id": 100,
+      "name": "log1p_trade_count",
+      "group": "Volume and activity",
+      "family": "Activity levels",
+      "parameters": {
+        "input": "trade_count",
+        "input_units": "trades",
+        "transform": "log1p"
+      }
+    },
+    {
+      "id": 101,
+      "name": "return_skew_20",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 102,
+      "name": "return_excess_kurtosis_20",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 103,
+      "name": "return_skew_40",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 104,
+      "name": "return_excess_kurtosis_40",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 105,
+      "name": "return_skew_80",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 106,
+      "name": "return_excess_kurtosis_80",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 107,
+      "name": "return_skew_160",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 108,
+      "name": "return_excess_kurtosis_160",
+      "group": "Distribution and regime changes",
+      "family": "Return distribution",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80,
+          160
+        ],
+        "estimator": "uncorrected central moments"
+      }
+    },
+    {
+      "id": 109,
+      "name": "return_autocorr_80_lag_1",
+      "group": "Distribution and regime changes",
+      "family": "Return autocorrelation",
+      "parameters": {
+        "pairs": 80,
+        "lags": [
+          1,
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "id": 110,
+      "name": "return_autocorr_80_lag_2",
+      "group": "Distribution and regime changes",
+      "family": "Return autocorrelation",
+      "parameters": {
+        "pairs": 80,
+        "lags": [
+          1,
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "id": 111,
+      "name": "return_autocorr_80_lag_3",
+      "group": "Distribution and regime changes",
+      "family": "Return autocorrelation",
+      "parameters": {
+        "pairs": 80,
+        "lags": [
+          1,
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "id": 112,
+      "name": "return_autocorr_80_lag_5",
+      "group": "Distribution and regime changes",
+      "family": "Return autocorrelation",
+      "parameters": {
+        "pairs": 80,
+        "lags": [
+          1,
+          2,
+          3,
+          5
+        ]
+      }
+    },
+    {
+      "id": 113,
+      "name": "mean_change_20",
+      "group": "Distribution and regime changes",
+      "family": "Adjacent-window regime change",
+      "parameters": {
+        "windows": [
+          20,
+          80
+        ],
+        "comparison": "current n returns vs previous nonoverlapping n returns",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 114,
+      "name": "log_variance_ratio_20",
+      "group": "Distribution and regime changes",
+      "family": "Adjacent-window regime change",
+      "parameters": {
+        "windows": [
+          20,
+          80
+        ],
+        "comparison": "current n returns vs previous nonoverlapping n returns",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 115,
+      "name": "mean_change_80",
+      "group": "Distribution and regime changes",
+      "family": "Adjacent-window regime change",
+      "parameters": {
+        "windows": [
+          20,
+          80
+        ],
+        "comparison": "current n returns vs previous nonoverlapping n returns",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 116,
+      "name": "log_variance_ratio_80",
+      "group": "Distribution and regime changes",
+      "family": "Adjacent-window regime change",
+      "parameters": {
+        "windows": [
+          20,
+          80
+        ],
+        "comparison": "current n returns vs previous nonoverlapping n returns",
+        "ddof": 0
+      }
+    },
+    {
+      "id": 117,
+      "name": "taker_buy_imbalance_1",
+      "group": "Trade flow and calendar",
+      "family": "Taker-buy imbalance",
+      "parameters": {
+        "windows": [
+          1,
+          5,
+          10,
+          20,
+          40
+        ],
+        "units": "base asset"
+      }
+    },
+    {
+      "id": 118,
+      "name": "taker_buy_imbalance_5",
+      "group": "Trade flow and calendar",
+      "family": "Taker-buy imbalance",
+      "parameters": {
+        "windows": [
+          1,
+          5,
+          10,
+          20,
+          40
+        ],
+        "units": "base asset"
+      }
+    },
+    {
+      "id": 119,
+      "name": "taker_buy_imbalance_10",
+      "group": "Trade flow and calendar",
+      "family": "Taker-buy imbalance",
+      "parameters": {
+        "windows": [
+          1,
+          5,
+          10,
+          20,
+          40
+        ],
+        "units": "base asset"
+      }
+    },
+    {
+      "id": 120,
+      "name": "taker_buy_imbalance_20",
+      "group": "Trade flow and calendar",
+      "family": "Taker-buy imbalance",
+      "parameters": {
+        "windows": [
+          1,
+          5,
+          10,
+          20,
+          40
+        ],
+        "units": "base asset"
+      }
+    },
+    {
+      "id": 121,
+      "name": "taker_buy_imbalance_40",
+      "group": "Trade flow and calendar",
+      "family": "Taker-buy imbalance",
+      "parameters": {
+        "windows": [
+          1,
+          5,
+          10,
+          20,
+          40
+        ],
+        "units": "base asset"
+      }
+    },
+    {
+      "id": 122,
+      "name": "return_volume_corr_20",
+      "group": "Trade flow and calendar",
+      "family": "Return-volume correlation",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80
+        ],
+        "x": "one candle log return",
+        "y": "log1p base asset volume"
+      }
+    },
+    {
+      "id": 123,
+      "name": "return_volume_corr_40",
+      "group": "Trade flow and calendar",
+      "family": "Return-volume correlation",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80
+        ],
+        "x": "one candle log return",
+        "y": "log1p base asset volume"
+      }
+    },
+    {
+      "id": 124,
+      "name": "return_volume_corr_80",
+      "group": "Trade flow and calendar",
+      "family": "Return-volume correlation",
+      "parameters": {
+        "windows": [
+          20,
+          40,
+          80
+        ],
+        "x": "one candle log return",
+        "y": "log1p base asset volume"
+      }
+    },
+    {
+      "id": 125,
+      "name": "time_of_day_sin",
+      "group": "Trade flow and calendar",
+      "family": "Cyclical time",
+      "parameters": {
+        "timezone": "UTC",
+        "timestamp": "exclusive right edge of completed candle"
+      }
+    },
+    {
+      "id": 126,
+      "name": "time_of_day_cos",
+      "group": "Trade flow and calendar",
+      "family": "Cyclical time",
+      "parameters": {
+        "timezone": "UTC",
+        "timestamp": "exclusive right edge of completed candle"
+      }
+    },
+    {
+      "id": 127,
+      "name": "time_of_week_sin",
+      "group": "Trade flow and calendar",
+      "family": "Cyclical time",
+      "parameters": {
+        "timezone": "UTC",
+        "timestamp": "exclusive right edge of completed candle"
+      }
+    },
+    {
+      "id": 128,
+      "name": "time_of_week_cos",
+      "group": "Trade flow and calendar",
+      "family": "Cyclical time",
+      "parameters": {
+        "timezone": "UTC",
+        "timestamp": "exclusive right edge of completed candle"
+      }
+    }
+  ]
+}
